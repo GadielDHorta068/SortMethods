@@ -123,8 +123,4 @@ función particion(arreglo, inicio, fin):
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, lee las guías de contribución antes de enviar un pull request.
-
-## 📄 Licencia
-
-[Especificar la licencia, por ejemplo MIT]
+Las contribuciones son bienvenidas.
