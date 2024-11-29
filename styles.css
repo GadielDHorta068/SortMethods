@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background-color: #1f1f1f; /* Fondo más oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.algorithm-container {
+    margin: 10px;
+    flex: 1 1 45%;
+    border: 1px solid #333; /* Bordes oscuros */
+    background: #1c1c1c; /* Fondo oscuro para contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra más tenue */
+    overflow: hidden;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #ffffff; /* Texto blanco, cambiar a algo menos contrastoso */
+}
+
+.visualization-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    border-top: 1px solid #444; /* Borde superior oscuro */
+    background-color: #181818; /* Fondo oscuro */
+    padding: 10px;
+}
+
+.bar {
+    margin: 1px;
+    background-color: #3498db; /*Color de la barra*/
+    width: 15px;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, filter 0.5s ease;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.algorithm-container {
+    position: relative;
+}
+
+.algorithm-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0);
+}

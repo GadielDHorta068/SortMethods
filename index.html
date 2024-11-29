@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparador de Algoritmos de Ordenamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comparador de Algoritmos de Ordenamiento</h1>
+        <div>
+            Cantidad de números: <span id="array-size-display">20</span>
+            <input type="range" id="array-size" min="10" max="50" value="20">
+            <button id="toggle-button">Generar y Ordenar</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="algorithm-container">
+            <h2>Burbuja</h2>
+            <div id="visualization-bubble" class="visualization-container"></div>
+            <div id="stats-bubble" class="stats-container">
+                Comparaciones: 0<br>
+                Intercambios: 0<br>
+                Tiempo: 0 ms
+            </div>
+            <div class="tooltip">
+                Ordenamiento Burbuja: Compara y mueve elementos adyacentes repetidamente.
+            </div>
+        </div>
+
+        <div class="algorithm-container">
+            <h2>Selección</h2>
+            <div id="visualization-selection" class="visualization-container"></div>
+            <div id="stats-selection" class="stats-container">
+                Comparaciones: 0<br>
+                Intercambios: 0<br>
+                Tiempo: 0 ms
+            </div>
+            <div class="tooltip">
+                Ordenamiento Selección: Encuentra el mínimo y lo coloca en su posición.
+            </div>
+        </div>
+
+        <div class="algorithm-container">
+            <h2>Inserción</h2>
+            <div id="visualization-insertion" class="visualization-container"></div>
+            <div id="stats-insertion" class="stats-container">
+                Comparaciones: 0<br>
+                Intercambios: 0<br>
+                Tiempo: 0 ms
+            </div>
+            <div class="tooltip">
+                Ordenamiento Inserción: Inserta elementos en su lugar correcto.
+            </div>
+        </div>
+
+        <div class="algorithm-container">
+            <h2>Rápido (QuickSort)</h2>
+            <div id="visualization-quick" class="visualization-container"></div>
+            <div id="stats-quick" class="stats-container">
+                Comparaciones: 0<br>
+                Intercambios: 0<br>
+                Tiempo: 0 ms
+            </div>
+            <div class="tooltip">
+                Ordenamiento Rápido: Divide y conquista usando un pivote.
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
